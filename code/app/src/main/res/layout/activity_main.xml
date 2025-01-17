@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ListyCity"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="#6200EE"
+        android:textColor="@android:color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add_city_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ADD CITY"
+            android:backgroundTint="#03DAC5"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"/>
+
+        <Button
+            android:id="@+id/delete_city_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DELETE CITY"
+            android:backgroundTint="#FF0266"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/city_name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter city name"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#E0E0E0"
+        android:textColor="@android:color/black"
+        android:padding="8dp" />
+
+    <ListView
+        android:id="@+id/city_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="10dp">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONFIRM"
+        android:backgroundTint="#03DAC5"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
