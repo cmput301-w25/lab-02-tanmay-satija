@@ -27,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
     Button addCityButton, deleteCityButton;
     int selectedPosition = -1;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -79,7 +78,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
         cityList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -101,10 +99,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-
-
-
-
 
     }
 }
